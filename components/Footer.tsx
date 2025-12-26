@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
                         <ul className="space-y-3">
                             <li className="flex items-start gap-2 text-navy-300 text-sm">
                                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0 text-primary-400" />
-                                <span>Odense, Denmark<br />5000 Odense C</span>
+                                <span>Nyborgvej 200<br />5000 Odense C</span>
                             </li>
                             <li className="flex items-center gap-2 text-navy-300 text-sm">
                                 <Mail className="w-4 h-4 flex-shrink-0 text-primary-400" />
@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
                             </li>
                             <li className="flex items-center gap-2 text-navy-300 text-sm">
                                 <Phone className="w-4 h-4 flex-shrink-0 text-primary-400" />
-                                <a href="tel:+4512345678" className="hover:text-primary-400 transition-colors">+45 12 34 56 78</a>
+                                <a href="tel:+4550433034" className="hover:text-primary-400 transition-colors">+45 50 43 30 34</a>
                             </li>
                         </ul>
                     </div>
@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
 
                 {/* Bottom Bar */}
                 <div className="border-t border-navy-800 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-navy-400">
-                    <p>© {currentYear} SenseFlow ApS. All rights reserved. CVR: 12345678</p>
+                    <p>© {currentYear} SenseFlow ApS. All rights reserved. CVR: 46113373</p>
                     <div className="flex gap-6">
                         <a href="#" className="hover:text-primary-400 transition-colors">Privacy Policy</a>
                         <a href="#" className="hover:text-primary-400 transition-colors">Terms of Service</a>

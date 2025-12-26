@@ -18,10 +18,11 @@ const Navbar: React.FC = () => {
     <nav className="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-navy-100 shadow-sm transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
         <div className="flex items-center gap-2.5 cursor-pointer group" onClick={() => scrollTo('home')}>
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center shadow-lg shadow-primary-500/20 group-hover:scale-105 transition-transform">
-            <Wind className="w-5 h-5 text-white" />
-          </div>
-          <span className="text-xl font-bold text-navy-900 tracking-tight">SenseFlow</span>
+          <img
+            src="/senseflow-logo.png"
+            alt="SenseFlow Logo"
+            className="h-14 w-auto group-hover:scale-105 transition-transform"
+          />
         </div>
 
         <div className="hidden md:flex items-center gap-8">

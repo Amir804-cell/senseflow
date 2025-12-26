@@ -13,37 +13,37 @@ const VideoDemo: React.FC = () => {
   }, []);
 
   const steps = [
-    { 
-      id: 0, 
-      icon: Scan, 
-      label: 'Detection', 
-      desc: 'Sensors monitor ambient temp & CO2', 
-      color: 'text-amber-400', 
-      bg: 'bg-amber-400/10' 
+    {
+      id: 0,
+      icon: Scan,
+      label: 'Detection',
+      desc: 'Integrated sensors continuously measure indoor air quality, temperature, and humidity.',
+      color: 'text-amber-400',
+      bg: 'bg-amber-400/10'
     },
-    { 
-      id: 1, 
-      icon: Cpu, 
-      label: 'Processing', 
-      desc: 'MCU calculates optimal cooling curve', 
-      color: 'text-violet-400', 
-      bg: 'bg-violet-400/10' 
+    {
+      id: 1,
+      icon: Cpu,
+      label: 'Processing',
+      desc: 'An ESP32-based controller processes sensor data and calculates optimal airflow and cooling assistance.',
+      color: 'text-violet-400',
+      bg: 'bg-violet-400/10'
     },
-    { 
-      id: 2, 
-      icon: Wind, 
-      label: 'Regulation', 
-      desc: 'Peltier & fan adjust instantly', 
-      color: 'text-cyan-400', 
-      bg: 'bg-cyan-400/10' 
+    {
+      id: 2,
+      icon: Wind,
+      label: 'Regulation',
+      desc: 'Fans and the thermoelectric cooling module are adjusted in real time to support indoor comfort and air quality.',
+      color: 'text-cyan-400',
+      bg: 'bg-cyan-400/10'
     },
-    { 
-      id: 3, 
-      icon: RefreshCw, 
-      label: 'Sync', 
-      desc: 'Data uploaded to cloud & app', 
-      color: 'text-emerald-400', 
-      bg: 'bg-emerald-400/10' 
+    {
+      id: 3,
+      icon: RefreshCw,
+      label: 'Synchronization',
+      desc: 'Operational data is stored locally and can be synchronized with a cloud platform and mobile application.',
+      color: 'text-emerald-400',
+      bg: 'bg-emerald-400/10'
     },
   ];
 
@@ -63,28 +63,26 @@ const VideoDemo: React.FC = () => {
           </div>
           <h2 className="text-3xl md:text-5xl font-bold mb-6 tracking-tight">How SenseFlow Works</h2>
           <p className="text-slate-400 max-w-2xl mx-auto text-lg">
-            Autonomous climate regulation powered by advanced edge computing.
+            A smart cycle of detection, processing, and regulation for optimal indoor climate control.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          
+
           {/* Left: Interactive Timeline */}
           <div className="space-y-4">
             {steps.map((step, index) => (
-              <div 
+              <div
                 key={index}
                 onClick={() => setActiveStep(index)}
-                className={`group cursor-pointer relative p-6 rounded-2xl border transition-all duration-500 ${
-                  activeStep === index 
-                    ? 'bg-slate-900/80 border-cyan-500/50 shadow-[0_0_30px_rgba(6,182,212,0.15)] translate-x-4' 
-                    : 'bg-slate-900/30 border-slate-800 hover:bg-slate-900/50 hover:border-slate-700'
-                }`}
+                className={`group cursor-pointer relative p-6 rounded-2xl border transition-all duration-500 ${activeStep === index
+                  ? 'bg-slate-900/80 border-cyan-500/50 shadow-[0_0_30px_rgba(6,182,212,0.15)] translate-x-4'
+                  : 'bg-slate-900/30 border-slate-800 hover:bg-slate-900/50 hover:border-slate-700'
+                  }`}
               >
                 <div className="flex items-center gap-5">
-                  <div className={`w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-500 ${
-                    activeStep === index ? step.bg + ' ' + step.color : 'bg-slate-800 text-slate-500'
-                  }`}>
+                  <div className={`w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-500 ${activeStep === index ? step.bg + ' ' + step.color : 'bg-slate-800 text-slate-500'
+                    }`}>
                     <step.icon className="w-6 h-6" />
                   </div>
                   <div>
@@ -99,7 +97,7 @@ const VideoDemo: React.FC = () => {
                     </div>
                   )}
                 </div>
-                
+
                 {/* Progress Bar for active step */}
                 {activeStep === index && (
                   <div className="absolute bottom-0 left-6 right-6 h-0.5 bg-slate-800 overflow-hidden rounded-full">
@@ -114,7 +112,7 @@ const VideoDemo: React.FC = () => {
           <div className="relative aspect-square md:aspect-[4/3] bg-slate-900 rounded-3xl border border-slate-800 p-8 flex flex-col shadow-2xl overflow-hidden">
             {/* Grid overlay */}
             <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:40px_40px]" />
-            
+
             {/* Header */}
             <div className="flex justify-between items-center mb-8 relative z-10">
               <div className="flex items-center gap-2">
@@ -127,7 +125,7 @@ const VideoDemo: React.FC = () => {
 
             {/* Dynamic Content Container */}
             <div className="flex-1 flex items-center justify-center relative z-10">
-              
+
               {/* Step 0: Detection Animation */}
               {activeStep === 0 && (
                 <div className="relative">
@@ -135,10 +133,10 @@ const VideoDemo: React.FC = () => {
                     <div className="w-24 h-24 rounded-full border border-amber-500/50" />
                   </div>
                   <Scan className="w-10 h-10 text-amber-500 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-pulse" />
-                  
+
                   {/* Radar waves */}
                   <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 border border-amber-500/20 rounded-full animate-ping" />
-                  
+
                   <div className="absolute -bottom-12 left-1/2 -translate-x-1/2 text-center whitespace-nowrap">
                     <div className="text-amber-400 font-mono text-sm mb-1">SCANNING_ENV</div>
                     <div className="text-xs text-slate-500">Temp: 24.5°C | CO2: 450ppm</div>
@@ -151,7 +149,7 @@ const VideoDemo: React.FC = () => {
                 <div className="relative">
                   <Cpu className="w-20 h-20 text-violet-500 mb-4 mx-auto" />
                   <div className="flex gap-2 justify-center mb-6">
-                    {[0,1,2].map(i => (
+                    {[0, 1, 2].map(i => (
                       <div key={i} className="w-2 h-8 bg-violet-500/30 rounded-full overflow-hidden">
                         <div className="w-full bg-violet-500 animate-[rise_1s_ease-in-out_infinite]" style={{ height: '100%', animationDelay: `${i * 0.2}s` }} />
                       </div>
@@ -176,7 +174,7 @@ const VideoDemo: React.FC = () => {
                       <div className="absolute inset-0 bg-white/20 animate-[flowBar_1s_linear_infinite]" />
                     </div>
                   </div>
-                  
+
                   <div className="flex justify-center items-center gap-4">
                     <Wind className="w-12 h-12 text-cyan-500 animate-[spin_1s_linear_infinite]" />
                     <div className="text-sm text-slate-300">

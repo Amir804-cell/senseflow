@@ -6,7 +6,7 @@ const Contact: React.FC = () => {
     <section id="contact" className="py-24 bg-white relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-slate-50 skew-x-12 translate-x-32 -z-0" />
-      
+
       <div className="max-w-6xl mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6 tracking-tight">Get In Touch</h2>
@@ -14,8 +14,8 @@ const Contact: React.FC = () => {
             Interested in implementing SenseFlow in your building? We'd love to hear from you.
           </p>
         </div>
-        
-        <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+
+        <div className="max-w-lg mx-auto">
           {/* Contact Info */}
           <div className="bg-white p-8 rounded-3xl border border-slate-100 shadow-xl shadow-slate-200/50">
             <h3 className="text-2xl font-bold text-slate-900 mb-8">Contact Information</h3>
@@ -35,8 +35,8 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <div className="text-sm font-semibold text-slate-400 uppercase tracking-wide mb-1">Location</div>
-                  <div className="text-lg text-slate-800 font-medium">Odense, Denmark</div>
-                  <div className="text-sm text-slate-500">Munkebjergvænget 1</div>
+                  <div className="text-lg text-slate-800 font-medium">Nyborgvej 200</div>
+                  <div className="text-sm text-slate-500">5000 Odense C</div>
                 </div>
               </div>
               <div className="flex items-start gap-5 group">
@@ -45,47 +45,9 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <div className="text-sm font-semibold text-slate-400 uppercase tracking-wide mb-1">Phone</div>
-                  <div className="text-lg text-slate-800 font-medium">+45 12 34 56 78</div>
+                  <div className="text-lg text-slate-800 font-medium">+45 50 43 30 34</div>
                 </div>
               </div>
-            </div>
-          </div>
-          
-          {/* Contact Form */}
-          <div className="bg-slate-50 p-8 rounded-3xl border border-slate-200">
-            <h3 className="text-2xl font-bold text-slate-900 mb-8">Send a Message</h3>
-            <div className="space-y-5">
-              <div className="space-y-2">
-                <label className="text-sm font-semibold text-slate-700 ml-1">Full Name</label>
-                <input 
-                  type="text" 
-                  placeholder="John Doe" 
-                  className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl focus:border-cyan-500 focus:ring-2 focus:ring-cyan-200 focus:outline-none transition-all placeholder:text-slate-300"
-                />
-              </div>
-              
-              <div className="space-y-2">
-                <label className="text-sm font-semibold text-slate-700 ml-1">Email Address</label>
-                <input 
-                  type="email" 
-                  placeholder="john@company.com" 
-                  className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl focus:border-cyan-500 focus:ring-2 focus:ring-cyan-200 focus:outline-none transition-all placeholder:text-slate-300"
-                />
-              </div>
-              
-              <div className="space-y-2">
-                <label className="text-sm font-semibold text-slate-700 ml-1">Message</label>
-                <textarea 
-                  rows={4} 
-                  placeholder="Tell us about your project..." 
-                  className="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl focus:border-cyan-500 focus:ring-2 focus:ring-cyan-200 focus:outline-none transition-all placeholder:text-slate-300 resize-none"
-                />
-              </div>
-              
-              <button className="w-full py-4 bg-slate-900 text-white rounded-xl font-bold hover:bg-slate-800 hover:shadow-lg hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2 mt-4">
-                <span>Send Message</span>
-                <Send className="w-4 h-4" />
-              </button>
             </div>
           </div>
         </div>

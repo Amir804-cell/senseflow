@@ -55,15 +55,14 @@ const Hero: React.FC = () => {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-extrabold mb-8 leading-[1.1] text-navy-900 tracking-tight animate-fade-in-up delay-100">
-            Smart Climate <br />
+            SenseFlow <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-primary-800">
-              Control System
+              Smart Ventilation & Indoor Air Quality Control
             </span>
           </h1>
 
           <p className="text-navy-600 mb-10 leading-relaxed text-lg md:text-xl max-w-lg mx-auto lg:mx-0 animate-fade-in-up delay-200">
-            Next-generation IoT ventilation with Peltier cooling technology.
-            Experience precise, silent, and autonomous climate regulation.
+            SenseFlow is a compact IoT-based climate assist system designed to enhance existing ventilation systems with real-time air quality monitoring, intelligent airflow control, and optional localized thermoelectric cooling.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in-up delay-300 mb-8">
