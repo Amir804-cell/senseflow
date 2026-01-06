@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
                             </li>
                             <li className="flex items-center gap-2 text-navy-300 text-sm">
                                 <Mail className="w-4 h-4 flex-shrink-0 text-primary-400" />
-                                <a href="mailto:info@senseflow.dk" className="hover:text-primary-400 transition-colors">info@senseflow.dk</a>
+                                <a href="mailto:contact@senseflow.dk" className="hover:text-primary-400 transition-colors">contact@senseflow.dk</a>
                             </li>
                             <li className="flex items-center gap-2 text-navy-300 text-sm">
                                 <Phone className="w-4 h-4 flex-shrink-0 text-primary-400" />
